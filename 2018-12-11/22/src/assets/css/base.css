@@ -1,0 +1,216 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(#1a112d, #170f28);
+  background: -o-linear-gradient(#1a112d, #170f28);
+  background: -moz-linear-gradient(#1a112d, #170f28);
+  background: linear-gradient(#1a112d, #170f28);
+  color:#fff;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing:0;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, ul, h1, h2, h3, h4, p, dl, dd {
+  margin: 0;
+}
+
+button, a, select, input, textarea {
+  font-size: 15px;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+   font-size: 14px;
+   color: #b7b7b7;
+ }
+
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.hasHead{
+  padding-top: .2rem;
+}
+#app > .page{
+  padding-bottom:.98rem;
+
+
+}
+#popup{
+  background-color: #33254C;
+}
+.video-js,.vjs-poster{
+  background-color: transparent!important;
+}
+.ivu-message{
+  color:#000;
+}
+.vux-header{
+  background-color: transparent!important;
+}
+.is_act{
+  position: relative;
+}
+.icon-push{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2rem;
+  height: 2rem;
+  background: url("../img/push.png") right no-repeat;
+  background-size: 2rem;
+}
+.actLabel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: url("../img/dream/pushlabel.png") left no-repeat;
+  background-size: .18rem;
+  font-size: .22rem;
+  padding-left: .3rem;
+  margin-left: .3rem;
+  margin-top: .2rem;
+}
+/*没有关注的人*/
+.startfocus{
+  text-align: center;
+  font-size: .26rem;
+  margin-top: .3rem;
+  color: #BBBABD;
+}
+.share_ico{
+  width: .4rem;
+}
+.vux-header .vux-header-left a{
+  color: #ffffff !important;
+  font-size: .3rem;
+}
+.vjs-error .vjs-error-display .vjs-modal-dialog-content{
+  display: none;
+}
+#popup {
+  max-height: 75%;
+}
+
+#popup .wrap {
+  padding: .26rem .3rem .88rem;
+}
+
+#popup .close_ico {
+  line-height: .34rem;
+}
+
+#popup .top {
+  margin-bottom: .4rem;
+}
+
+#popup .comment_num {
+  font-size: .34rem;
+}
+
+#popup .user_pic {
+  margin-right: .12rem;
+  width: .6rem;
+  height: .6rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#popup .cont {
+  max-width: 6.1rem;/*4.8*/
+}
+
+#popup .txt {
+  font-size: .28rem;
+  line-height: .4rem;
+}
+
+#popup .nick {
+  font-size: .26rem;
+  margin-bottom: .12rem;
+  color: #BFBDC4;
+}
+
+#popup .time {
+  margin-top: .06rem;
+  font-size: .26rem;
+  color: #5C5170;
+}
+
+#popup .msg_item {
+  margin-bottom: .62rem;
+}
+
+#popup .like_ico {
+  margin-bottom: .14rem;
+  width: .38rem;
+}
+#popup .input-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#popup .input-wrap input {
+  width: 100%;
+  padding-left: .3rem;
+  padding-right: 1.5rem;
+  background-color: #1B112E;
+  color: #AFA3C7;
+  font-size: .28rem;
+  outline: none;
+  border: none;
+  line-height: .68rem;
+}
+
+#popup .input-wrap span {
+  position: absolute;
+  top: .22rem;
+  right: .5rem;
+  color: #fff;
+  font-size: .24rem;
+}
+#popup .praiseCount{
+  text-align: center;
+}

@@ -1,0 +1,276 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(#1a112d, #170f28);
+  background: -o-linear-gradient(#1a112d, #170f28);
+  background: -moz-linear-gradient(#1a112d, #170f28);
+  background: linear-gradient(#1a112d, #170f28);
+  color:#fff;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing:0;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, ul, h1, h2, h3, h4, p, dl, dd {
+  margin: 0;
+}
+
+button, a, select, input, textarea {
+  font-size: 15px;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+   font-size: 14px;
+   color: #b7b7b7;
+ }
+
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.hasHead{
+  padding-top: 1.56rem;
+}
+/*#app > .page{
+  padding-bottom:.98rem;
+}*/
+#popup{
+  background-color: #33254C;
+}
+.video-js,.vjs-poster{
+  background-color: transparent!important;
+}
+.ivu-message{
+  color:#000;
+}
+.vux-header{
+  background-color: transparent!important;
+  margin-top: .4rem;
+}
+#app .vux-header .vux-header-left .left-arrow:before{
+  border:1px solid #fff;
+  border-width:2px 0 0 2px ;
+}
+/*push*/
+.live{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+.live img{
+  width: 2rem;
+  height: 2rem;
+  z-index: 0;
+}
+.push-active{transform:scale(1.2);}
+.live img:hover{transform:scale(1.2);}
+
+@keyframes living {
+  0%{
+    transform: scale(.5);
+    opacity: 0.5;
+  }
+  50%{
+    transform: scale(1.2);
+    opacity: 0;   /*圆形放大的同时，透明度逐渐减小为0*/
+  }
+  100%{
+    transform: scale(.5);
+    opacity: 0.5;
+  }
+}
+.live span{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation: living 3s linear infinite;
+  z-index: -1;
+}
+.live span:nth-child(2){
+  -webkit-animation-delay: 1.5s; /*第二个span动画延迟1.5秒*/
+}
+
+/*没有关注的人*/
+.startfocus{
+  text-align: center;
+  font-size: .26rem;
+  margin-top: .3rem;
+  color: #BBBABD;
+}
+.share_ico{
+  width: .4rem;
+}
+.vux-header .vux-header-left a{
+  color: #ffffff !important;
+  font-size: .3rem;
+}
+.vjs-error .vjs-error-display .vjs-modal-dialog-content{
+  display: none;
+}
+#popup {
+  -max-height: 75%;
+}
+
+#popup .wrap {
+  padding: .26rem .3rem .88rem;
+}
+#popup .comment-list{
+  height: 3rem;
+}
+#popup .close_ico {
+  line-height: .34rem;
+}
+
+#popup .top {
+  margin-bottom: .4rem;
+}
+
+#popup .comment_num {
+  font-size: .34rem;
+}
+
+#popup .user_pic {
+  margin-right: .12rem;
+  width: .6rem;
+  height: .6rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#popup .cont {
+  max-width: 6.1rem;/*4.8*/
+  color: #fff;
+}
+#popup .like_pra{
+  color: #FECF74;
+}
+#popup .no_pra{
+  color: #929098;
+}
+
+#popup .txt {
+  max-width: 5.7rem;
+  font-size: .28rem;
+  line-height: .4rem;
+}
+
+#popup .nick {
+  font-size: .26rem;
+  margin-bottom: .12rem;
+  color: #BFBDC4;
+}
+
+#popup .time {
+  margin-top: .06rem;
+  font-size: .26rem;
+  color: #5C5170;
+}
+
+#popup .msg_item {
+  margin-bottom: .62rem;
+}
+
+#popup .like_ico {
+  margin-bottom: .14rem;
+  width: .38rem;
+}
+#popup .input-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#popup .input-wrap input {
+  width: 100%;
+  padding-left: .3rem;
+  padding-right: 1.5rem;
+  background-color: #1B112E;
+  color: #AFA3C7;
+  font-size: .28rem;
+  outline: none;
+  border: none;
+  line-height: 1.02rem;
+}
+
+#popup .input-wrap span {
+  position: absolute;
+  top: .36rem;
+  right: .5rem;
+  color: #fff;
+  font-size: .3rem;
+}
+#popup .praiseCount{
+  text-align: center;
+}
+.row{color: #fff;}
+#app .weui-dialog{
+  background-color: #1F173E;
+}
+#app .weui-dialog__bd:first-child{
+  color: #fff;
+}
+#app .weui-dialog__bd{
+  color: #fff;
+}
+#app .weui-dialog__btn_default{
+  color: #8A60FF;
+}
+#app .weui-dialog__btn_primary{
+  color: #fff;
+}
+
+.play-icon{
+  position: absolute;
+  width: .4rem;
+  height: .44rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
